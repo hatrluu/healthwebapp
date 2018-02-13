@@ -1,0 +1,72 @@
+/* CSS Document */
+*{
+	margin:0;
+	padding: 0;
+}
+a{
+	font-size: 30px;
+	color:white;
+	text-decoration: none;
+	padding: 50px;
+}
+.wrapper{
+	display: grid;
+	padding: 10%;
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 24px;
+	text-shadow: 2px 2px 3px #000000;
+	text-align: center;
+	grid-template-columns: repeat(2, 1fr);
+	grid-gap: 1em;
+	grid-auto-rows: minmax(150px, auto);
+	grid-template-areas:
+		"intro intro"
+		"profile heartrate"
+		"bloodpressure exercise"
+}
+
+.wrapper > div{
+	padding-top:40%;
+}
+
+#intro{
+	grid-area: intro;
+}
+#profile{
+	grid-area: profile;
+	background: linear-gradient(
+      rgba(0, 0, 0, 0.2),
+      rgba(0, 0, 0, 0.2)
+    ), url(../images/background.jpg);
+	background-size: cover;
+	background-position:top;
+}
+
+
+#heartrate{
+	grid-area: heartrate;
+	background: linear-gradient(
+      rgba(0, 0, 0, 0.2),
+      rgba(0, 0, 0, 0.2)
+    ),url(../images/heartrate.jpg);
+	background-size: cover;
+	background-position: center;
+}
+#bloodpressure{
+	grid-area: bloodpressure;
+	background: linear-gradient(
+      rgba(0, 0, 0, 0.2),
+      rgba(0, 0, 0, 0.2)
+    ), url(../images/bloodpressure.jpg);
+	background-size: cover;
+	background-position: center;
+}
+#exercise{
+	grid-area: exercise;
+	background: linear-gradient(
+      rgba(0, 0, 0, 0.2),
+      rgba(0, 0, 0, 0.2)
+    ), url(../images/exercise.jpg);
+	background-size: cover;
+	background-position: center;
+}
